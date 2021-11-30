@@ -18,7 +18,7 @@ class SampleTest {
     void fact_Should_Produce_IllegalArgumentException()
     {
         int number = -2;
-        org.assertj.core.api.Assertions.assertThatExceptionOfType(IllegalArgumentException.class).isThrownBy(() -> new Sample().fact(number)).withMessage("N should be possitive");
+        org.assertj.core.api.Assertions.assertThatExceptionOfType(IllegalArgumentException.class).isThrownBy(() -> new Sample().fact(number)).withMessage("N should be positive");
     }
 
 }
