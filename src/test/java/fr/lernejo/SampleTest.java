@@ -21,4 +21,12 @@ class SampleTest {
         org.assertj.core.api.Assertions.assertThatExceptionOfType(IllegalArgumentException.class).isThrownBy(() -> new Sample().fact(number)).withMessage("N should be positive");
     }
 
+    @Test
+    void fact_Should_Produce_PositiveResult()
+    {
+        int number = 3;
+        assertEquals(6, new Sample().fact(number));
+
+    }
+
 }
